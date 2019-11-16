@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FragmentHome">
+    android:layout_height="match_parent">
 
     <!-- TODO: Update blank fragment layout -->
     <android.support.constraint.ConstraintLayout
@@ -101,7 +100,7 @@
         </ScrollView>
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton"
+            android:id="@+id/fabFeeds"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
@@ -110,7 +109,8 @@
             android:layout_marginRight="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:src="@drawable/newpostimg"/>
+            android:src="@drawable/newpostimg"
+            android:onClick="newPost"/>
     </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>
