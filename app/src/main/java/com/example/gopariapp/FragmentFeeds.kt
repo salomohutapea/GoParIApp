@@ -14,18 +14,17 @@ import kotlinx.android.synthetic.main.fragment_feeds.*
  */
 class FragmentFeeds : Fragment() {
 
-
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
-    ): View = inflater.inflate(R.layout.fragment_home, container, false)
+    ): View = inflater.inflate(R.layout.fragment_feeds, container, false)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        fabFeeds.setOnClickListener {
-            val matematikaIntent = Intent(requireActivity(), NewFeedsActivity::class.java)
-            requireActivity().startActivity(matematikaIntent)
+        fabNewFeeds.setOnClickListener {
+            val Intent = Intent(requireActivity(), NewPostActivity::class.java)
+            requireActivity().startActivity(Intent)
         }
     }
 

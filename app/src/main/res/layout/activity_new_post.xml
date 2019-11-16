@@ -15,17 +15,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgNewPost"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/cavetubing"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/backNewPost"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/backNewPost"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:background="@drawable/backarrow"
@@ -43,8 +42,8 @@
             android:textColor="#fff"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="88dp" />
+            app:layout_constraintStart_toEndOf="@id/imgNewPost"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <android.support.v7.widget.CardView
             android:layout_width="100dp"
