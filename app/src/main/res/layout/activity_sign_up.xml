@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="@color/colorBlue"
+            android:id="@+id/tvTitleSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="100px"
+            android:layout_marginBottom="100px"
+            android:fontFamily="@font/hind_bold"
+            android:text="Sign Up"
+            android:textSize="80px" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleSignUp"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:textColor="@color/colorBlue"
+                    android:id="@+id/tvFullNameSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:text="Nama Lengkap"
+                    android:textSize="60px" />
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:ems="10"
+                    android:hint="Nama Lengkap"
+                    android:inputType="textPersonName"/>
+
+
+                <TextView
+                    android:textColor="@color/colorBlue"
+                    android:id="@+id/tvTitleEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Email"
+                    android:textSize="60px" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"/>
+
+                <TextView
+                    android:textColor="@color/colorBlue"
+                    android:id="@+id/tvPasswordSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Kata Sandi"
+                    android:textSize="60px" />
+
+                <EditText
+                    android:id="@+id/etPasswordSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:ems="10"
+                    android:hint="Kata Sandi"
+                    android:inputType="textPassword"/>
+
+                <TextView
+                    android:textColor="@color/colorBlue"
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="40px"
+                    android:text="Nomor Telepon"
+                    android:textSize="60px" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv622"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:text="+62"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/etNoOrtu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:ems="10"
+                        android:hint="Nomor Telepon"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btSignUp"
+                    android:background="@drawable/gradienthorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40px"
+                    android:layout_marginTop="40px"
+                    android:layout_marginEnd="40px"
+                    android:layout_marginBottom="40px"
+                    android:text="Sign Up"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50px">
+
+                    <TextView
+                        android:id="@+id/tvDont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:text="Sudah punya akun?"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tvSignIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40px"
+                        android:layout_toEndOf="@id/tvDont"
+                        android:text="Sign in"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
