@@ -17,7 +17,7 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:src="@drawable/caveTubing"
+            android:src="@drawable/cavetubing"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView"
             app:layout_constraintHorizontal_bias="1.0"
@@ -73,12 +73,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/newpostImg"
-        android:scaleType="fitXY"
+        android:backgroundTint="#2482CA"
         android:layout_marginBottom="30dp"
         android:layout_marginRight="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_image"/>
 
 
 </android.support.constraint.ConstraintLayout>
