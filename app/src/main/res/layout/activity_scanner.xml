@@ -43,7 +43,7 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
@@ -60,15 +60,23 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Your Balance"
                 android:textAlignment="center"
                 android:textColor="#696969"
-                android:textSize="11dp"
+                android:textSize="11sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-            <Tec
+                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/PayTvBalance"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/PayTvBalance"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/PayTvIdr"
+                android:text="Rp500000"/>
 
 
         </android.support.constraint.ConstraintLayout>
