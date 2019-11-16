@@ -69,18 +69,30 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/linearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/homeLLSearch">
 
                 <android.support.v7.widget.RecyclerView
-                    android:layout_width="wrap_content"
                     android:id="@+id/homeRvPromo"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                </android.support.v7.widget.RecyclerView>
+                    android:orientation="horizontal"></android.support.v7.widget.RecyclerView>
             </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                android:layout_margin="20dp">
+
+            </android.support.v7.widget.RecyclerView>
+
         </android.support.constraint.ConstraintLayout>
 
     </ScrollView>
