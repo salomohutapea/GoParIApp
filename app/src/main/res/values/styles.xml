@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorWhite</item>
         <item name="colorPrimaryDark">@color/colorBlue</item>
         <item name="colorAccent">@color/colorPurple</item>
+        <item name="android:fontFamily">@font/hind</item>
     </style>
 
 </resources>
