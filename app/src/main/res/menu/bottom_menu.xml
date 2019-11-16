@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navBarHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navBarFeeds"
+        android:title="Feeds"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navBarHistory"
+        android:title="History"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navBarProfile"
+        android:title="Profile"
+        app:showAsAction="always"/>
+</menu>
