@@ -32,9 +32,6 @@
         android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@id/RecyclerConstraintLayout"
         android:id="@+id/RecyclerViewHistory"
-        android:scrollbars="vertical"
-        >
+        android:scrollbars="vertical">
     </android.support.v7.widget.RecyclerView>
-
-
 </android.support.constraint.ConstraintLayout>

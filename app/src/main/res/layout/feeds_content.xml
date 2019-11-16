@@ -14,6 +14,7 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:src="@drawable/cavetubing"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
