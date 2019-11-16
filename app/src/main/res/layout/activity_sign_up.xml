@@ -3,14 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlProgressSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProgressBarSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Please Wait"
+                    android:textSize="25sp" />
+
+                <ProgressBar
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:textColor="@color/colorBlue"
             android:id="@+id/tvTitleSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,6 +52,7 @@
             android:layout_marginBottom="100px"
             android:fontFamily="@font/hind_bold"
             android:text="Sign Up"
+            android:textColor="@color/colorBlue"
             android:textSize="80px" />
 
         <ScrollView
@@ -34,12 +68,12 @@
 
 
                 <TextView
-                    android:textColor="@color/colorBlue"
                     android:id="@+id/tvFullNameSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40px"
                     android:text="Nama Lengkap"
+                    android:textColor="@color/colorBlue"
                     android:textSize="60px" />
 
                 <EditText
@@ -50,17 +84,17 @@
                     android:layout_marginRight="40px"
                     android:ems="10"
                     android:hint="Nama Lengkap"
-                    android:inputType="textPersonName"/>
+                    android:inputType="textPersonName" />
 
 
                 <TextView
-                    android:textColor="@color/colorBlue"
                     android:id="@+id/tvTitleEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40px"
                     android:layout_marginTop="40px"
                     android:text="Email"
+                    android:textColor="@color/colorBlue"
                     android:textSize="60px" />
 
                 <EditText
@@ -71,16 +105,16 @@
                     android:layout_marginRight="40px"
                     android:ems="10"
                     android:hint="Email"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textEmailAddress" />
 
                 <TextView
-                    android:textColor="@color/colorBlue"
                     android:id="@+id/tvPasswordSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40px"
                     android:layout_marginTop="40px"
                     android:text="Kata Sandi"
+                    android:textColor="@color/colorBlue"
                     android:textSize="60px" />
 
                 <EditText
@@ -91,16 +125,16 @@
                     android:layout_marginRight="40px"
                     android:ems="10"
                     android:hint="Kata Sandi"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword" />
 
                 <TextView
-                    android:textColor="@color/colorBlue"
                     android:id="@+id/tvPhoneNumber"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40px"
                     android:layout_marginTop="40px"
                     android:text="Nomor Telepon"
+                    android:textColor="@color/colorBlue"
                     android:textSize="60px" />
 
                 <LinearLayout
@@ -125,20 +159,20 @@
                         android:layout_marginRight="40px"
                         android:ems="10"
                         android:hint="Nomor Telepon"
-                        android:inputType="number"/>
+                        android:inputType="number" />
                 </LinearLayout>
 
 
                 <Button
                     android:id="@+id/btSignUp"
-                    android:background="@drawable/gradienthorizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40px"
                     android:layout_marginTop="40px"
                     android:layout_marginEnd="40px"
                     android:layout_marginBottom="40px"
-                    android:text="Sign Up"/>
+                    android:background="@drawable/gradienthorizontal"
+                    android:text="Sign Up" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"

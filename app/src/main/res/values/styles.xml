@@ -9,4 +9,9 @@
         <item name="android:fontFamily">@font/hind</item>
     </style>
 
+    <style name="AppTheme.Popme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
 </resources>
