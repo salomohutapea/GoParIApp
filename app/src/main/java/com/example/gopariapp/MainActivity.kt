@@ -17,6 +17,10 @@ private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigation
             replaceFragment(FragmentProfile())
             return@OnNavigationItemSelectedListener true
         }
+        R.id.navbarPay -> {
+            replaceFragment(Fragment())
+            return@OnNavigationItemSelectedListener true
+        }
         R.id.navBarFeeds -> {
             replaceFragment(FragmentFeeds())
             return@OnNavigationItemSelectedListener true
