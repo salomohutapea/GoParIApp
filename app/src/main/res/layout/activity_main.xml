@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_gravity="bottom"
-        app:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="@color/colorWhite"
         app:fabAlignmentMode="center"/>
 
     <android.support.design.widget.FloatingActionButton
