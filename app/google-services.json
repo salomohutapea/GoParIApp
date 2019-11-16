@@ -44,6 +44,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "66471031876-u8pshrnqt7nbe7f0fl8qubf9lfgidhc6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gopariapp",
+            "certificate_hash": "a93988049c34ca119d2888208633773a9f1c06e3"
+          }
+        },
+        {
           "client_id": "66471031876-ptv1o6mnsh9rnsft9lt68ftnc1aa7b6d.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
