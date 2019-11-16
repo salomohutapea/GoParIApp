@@ -4,18 +4,21 @@
     <item
         android:id="@+id/navBarHome"
         android:title="Home"
-        android:icon="@drawable/ic_wallet_black"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_wallet_black"/>
     <item
         android:id="@+id/navBarFeeds"
-        android:title="Feeds"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_newspapericon"
+        android:title="Feeds"/>
+    <item
+        android:id="@+id/navbarPay"
+        android:icon="@drawable/ic_buttonqricon"
+        android:title="Pay"/>
     <item
         android:id="@+id/navBarHistory"
-        android:title="History"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_walleticon"
+        android:title="History"/>
     <item
         android:id="@+id/navBarProfile"
-        android:title="Profile"
-        app:showAsAction="always"/>
+        android:icon="@drawable/ic_personicon"
+        android:title="Profile"/>
 </menu>
