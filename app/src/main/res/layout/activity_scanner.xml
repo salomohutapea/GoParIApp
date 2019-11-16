@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,13 +7,14 @@
     android:orientation="vertical">
 
     <android.support.constraint.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/bgcolor"
         android:orientation="horizontal"
         android:padding="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        >
 
         <ImageView
             android:id="@+id/imageView"
@@ -42,23 +43,26 @@
     </android.support.constraint.ConstraintLayout>
 
     <android.support.v7.widget.CardView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/gradienthorizontal"
+        android:id="@+id/ScannerCard"
         app:cardCornerRadius="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:contentPadding="8dp"
+        >
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/ScannerTvBalance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -66,21 +70,32 @@
                 android:textAlignment="center"
                 android:textColor="#696969"
                 android:textSize="11sp"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/PayTvBalance"/>
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
+                android:id="@+id/ScannerTvIdr"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/PayTvBalance"
-                android:textSize="20sp"
+                android:text="Rp500000"
                 android:textAlignment="center"
-                android:id="@+id/PayTvIdr"
-                android:text="Rp500000"/>
+                android:textColor="#000"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/ScannerTvBalance" />
+
+            <TextView
+                android:id="@+id/PayTvUsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="USD 100"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/ScannerTvIdr" />
 
 
         </android.support.constraint.ConstraintLayout>
 
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
