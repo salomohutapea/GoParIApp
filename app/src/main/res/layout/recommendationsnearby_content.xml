@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/favimg1" />
+            android:src="@drawable/favimg1"/>
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="358dp"
