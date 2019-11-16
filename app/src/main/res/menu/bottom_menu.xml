@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navBarHome"
         android:title="Home"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/ic_wallet_black"
         app:showAsAction="always"/>
     <item
         android:id="@+id/navBarFeeds"
