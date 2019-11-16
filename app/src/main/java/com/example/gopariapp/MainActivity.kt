@@ -14,9 +14,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val db = FirebaseFirestore.getInstance()
-    val notebookRef = db.collection("user").document("kiugkiyuykhj").collection("history")
-    private var adapter: FirestoreRecyclerAdapter<historyClass, historyClassAdapter.historyClassHolder>? = null
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navBarHome -> {
@@ -51,23 +48,6 @@ class MainActivity : AppCompatActivity() {
         replaceFragment(FragmentHome())
     }
 
-    fun setUpRecyclerView() {
-        val query: Query = notebookRef.orderBy("activity", Query.Direction.DESCENDING)
-
-        val options: FirestoreRecyclerOptions<historyClass> = FirestoreRecyclerOptions.Builder<historyClass>()
-                .setQuery(query, historyClass::class.java)
-                .build()
-        adapter = object : FirestoreRecyclerAdapter<historyClass, historyClassAdapter.historyClassHolder>(options) {
-            override fun onBindViewHolder(holder: historyClassAdapter.historyClassHolder, position: Int, model: historyClass) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-
-            override fun onCreateViewHolder(p0: ViewGroup, p1: Int): historyClassAdapter.historyClassHolder {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-            }
-
-        }
-    }
 
     private fun replaceFragment(fragment: Fragment) {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
