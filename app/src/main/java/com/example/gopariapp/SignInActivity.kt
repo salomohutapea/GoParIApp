@@ -87,6 +87,8 @@ class SignInActivity : AppCompatActivity() {
 
         //menyembunyikan keyboard
         hideKeyboard()
+        rlLogin.visibility = View.GONE
+
         cardProgressBarSignIn.visibility = View.VISIBLE
         rlProgress.visibility = View.VISIBLE
         FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)

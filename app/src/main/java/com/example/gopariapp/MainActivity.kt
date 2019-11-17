@@ -1,5 +1,6 @@
 package com.example.gopariapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
@@ -21,7 +22,11 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navbarPay -> {
-                replaceFragment(Fragment())
+                val Intent = Intent(
+                        this@MainActivity,
+                        PayActivity::class.java
+                )
+                startActivity(Intent)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navBarFeeds -> {

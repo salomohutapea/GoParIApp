@@ -5,120 +5,146 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignInActivity">
-    <RelativeLayout android:id="@+id/rlProgress" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
-        <android.support.v7.widget.CardView android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/rlProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
             android:id="@+id/cardProgressBarSignIn"
-            app:cardCornerRadius="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:layout_height="wrap_content">
-            <LinearLayout android:padding="10dp" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:orientation="horizontal">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                    android:text="Please Wait" android:textSize="25sp" android:layout_marginRight="10dp"
-                    android:layout_gravity="center"/>
-                <ProgressBar android:layout_width="80dp" android:layout_height="80dp"
-                    />
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:text="Please Wait"
+                    android:textSize="25sp" />
+
+                <ProgressBar
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
     </RelativeLayout>
 
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <TextView
-            android:textColor="@color/colorBlue"
-            android:text="Login"
+            android:id="@+id/tvTitleSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tvTitleSignIn"
-            android:textSize="100px"
-            android:layout_marginTop="200px"
             android:layout_marginLeft="40px"
-            android:layout_marginBottom="300px"/>
-        <TextView
-            android:text="Email"
+            android:layout_marginTop="200px"
+            android:layout_marginBottom="300px"
+            android:text="Login"
             android:textColor="@color/colorBlue"
+            android:textSize="100px" />
+
+        <TextView
+            android:id="@+id/tvUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvTitleSignIn"
             android:layout_marginLeft="40px"
-            android:id="@+id/tvUsername"
-            android:textSize="60px"/>
+            android:text="Email"
+            android:textColor="@color/colorBlue"
+            android:textSize="60px" />
+
         <EditText
+            android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:hint="Email"
-            android:ems="10"
             android:layout_below="@id/tvUsername"
-            android:layout_marginRight="40px"
             android:layout_marginLeft="40px"
-            android:id="@+id/etUsername"
-            android:importantForAutofill="no"/>
+            android:layout_marginRight="40px"
+            android:ems="10"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
         <TextView
-            android:text="Kata Sandi"
+            android:id="@+id/tvPassword"
             android:layout_width="wrap_content"
-            android:textColor="@color/colorBlue"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40px"
             android:layout_below="@id/etUsername"
             android:layout_marginLeft="40px"
-            android:id="@+id/tvPassword"
-            android:textSize="60px"/>
+            android:layout_marginTop="40px"
+            android:text="Kata Sandi"
+            android:textColor="@color/colorBlue"
+            android:textSize="60px" />
+
         <EditText
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Password"
-            android:ems="10"
-            android:layout_marginRight="40px"
             android:layout_below="@id/tvPassword"
             android:layout_marginLeft="40px"
-            android:id="@+id/etPassword"
-            android:importantForAutofill="no"/>
+            android:layout_marginRight="40px"
+            android:ems="10"
+            android:hint="Password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
 
         <Button
+            android:id="@+id/btSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/etPassword"
-            android:text="Sign In"
-            android:background="@drawable/gradienthorizontal"
-            android:id="@+id/btSignIn"
-            android:layout_marginTop="40px"
             android:layout_marginStart="40px"
+            android:layout_marginTop="40px"
             android:layout_marginEnd="40px"
-            android:layout_marginBottom="40px"/>
+            android:layout_marginBottom="40px"
+            android:background="@drawable/gradienthorizontal"
+            android:text="Sign In" />
 
         <TextView
-            android:text="Kamu belum mempuyai akun?"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btSignIn"
-            android:layout_marginLeft="40px"
-            android:layout_marginBottom="40px"
             android:id="@+id/tvDont"
-            android:textSize="15sp"
-            android:textColor="@android:color/darker_gray"/>
-
-        <TextView
-            android:text="Sign up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/tvDont"
             android:layout_below="@id/btSignIn"
-            android:layout_marginBottom="40px"
             android:layout_marginLeft="40px"
-            android:textColor="@color/colorBlue"
-            android:id="@+id/tvSignUp"
-            android:textSize="15sp"/>
+            android:layout_marginBottom="40px"
+            android:text="Kamu belum mempuyai akun?"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
 
         <TextView
-            android:text="Lupa password"
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btSignIn"
+            android:layout_marginLeft="40px"
+            android:layout_marginBottom="40px"
+            android:layout_toEndOf="@id/tvDont"
+            android:text="Sign up"
+            android:textColor="@color/colorBlue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tvDont"
-            android:visibility="gone"
-            android:layout_marginBottom="40px"
             android:layout_marginLeft="40px"
-            android:id="@+id/tvForgotPassword"
-            android:textSize="15sp"/>
+            android:layout_marginBottom="40px"
+            android:text="Lupa password"
+            android:textSize="15sp"
+            android:visibility="gone" />
     </RelativeLayout>
 </RelativeLayout>
